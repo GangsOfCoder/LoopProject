@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundColor">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:background="@android:color/white"
+            android:id="@+id/code_one_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundColor"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:nextFocusDown="@+id/code_two_et"
+            android:nextFocusForward="@+id/code_two_et"
+            android:paddingBottom="10dp"
+            android:paddingEnd="13dp"
+            android:paddingStart="13dp"
+            android:paddingTop="10dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray"
+            tools:ignore="RtlHardcoded" />
+
+        <EditText
+            android:background="@android:color/white"
+            android:id="@+id/code_two_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundColor"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:nextFocusDown="@+id/code_three_et"
+            android:nextFocusForward="@+id/code_three_et"
+            android:paddingBottom="10dp"
+            android:paddingEnd="13dp"
+            android:paddingStart="13dp"
+            android:paddingTop="10dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray"
+            tools:ignore="RtlHardcoded" />
+
+        <EditText
+            android:background="@android:color/white"
+            android:id="@+id/code_three_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/backgroundColor"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:nextFocusDown="@+id/code_fourth_et"
+            android:nextFocusForward="@+id/code_fourth_et"
+            android:paddingBottom="10dp"
+            android:paddingEnd="13dp"
+            android:paddingStart="13dp"
+            android:paddingTop="10dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray"
+            tools:ignore="RtlHardcoded" />
+
+        <EditText
+            android:background="@android:color/white"
+            android:backgroundTint="@color/backgroundColor"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray"
+            android:id="@+id/code_fourth_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:nextFocusDown="@+id/code_fifth_et"
+            android:nextFocusForward="@+id/code_fifth_et"
+            android:paddingBottom="10dp"
+            android:paddingEnd="13dp"
+            android:paddingStart="13dp"
+            android:paddingTop="10dp"
+            android:text=""
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

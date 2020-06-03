@@ -1,0 +1,139 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    android:clickable="true"
+    android:fillViewport="true"
+    android:focusable="true"
+    tools:context="com.app.base.ui.login.LoginFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_white"
+            android:text="@string/confirm"
+            android:textAllCaps="false"
+            android:textColor="@color/teal_300"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/etConPassword" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/bg_white_corner"
+            android:drawableStart="@drawable/ic_mail"
+            android:drawablePadding="@dimen/_8sdp"
+            android:hint="@string/plz_enter_mail"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/_8sdp"
+            android:paddingStart="@dimen/_8sdp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorGray"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_white_corner"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="@dimen/_8sdp"
+            android:ems="10"
+            android:hint="@string/plz_enter_password"
+            android:inputType="textPassword"
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorGray"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+        <EditText
+            android:id="@+id/etConPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/bg_white_corner"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="@dimen/_8sdp"
+            android:ems="10"
+            android:hint="@string/plz_reenter_password"
+            android:inputType="textPassword"
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorGray"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/bg_white_corner"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="@dimen/_8sdp"
+            android:hint="@string/enter_name"
+            android:inputType="textPersonName"
+            android:padding="@dimen/_8sdp"
+            android:paddingStart="@dimen/_8sdp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorGray"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_arrow_left"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_acc"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/ivBack" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".95" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".05" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

@@ -1,0 +1,87 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="SignEditTextTheme" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_white_corner</item>
+        <item name="android:textColorHint">@color/colorGray</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:gravity">center</item>
+        <item name="singleLine">true</item>
+        <item name="android:paddingTop">@dimen/_15sdp</item>
+        <item name="android:paddingBottom">@dimen/_15sdp</item>
+        <item name="android:paddingStart">@dimen/_20sdp</item>
+    </style>
+
+
+    <style name="AboutTextTheme" parent="AppTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+    </style>
+
+
+    <style name="OrderEditTextTheme" parent="AppTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_gray_corner</item>
+        <item name="android:textColorHint">@color/colorGray2</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:padding">@dimen/_8sdp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+
+    <style name="OrderEditTextTheme2" parent="AppTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_gray_corner</item>
+        <item name="android:textColorHint">@color/colorGray2</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:padding">@dimen/_8sdp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="NavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemTextAppearanceActive">@style/ActiveText</item>
+        <item name="itemTextAppearanceInactive">@style/InactiveText</item>
+    </style>
+
+    <style name="ActiveText">
+        <item name="android:textColor">@color/colorBlue</item>
+        <item name="android:iconTint" tools:targetApi="o">@color/colorBlue</item>
+    </style>
+
+    <style name="InactiveText">
+        <item name="android:textColor">@color/colorGray2</item>
+    </style>
+
+    <color name="colorGray">#555555</color>
+
+    <style name="SlideAnimation" parent="android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_from_bottom</item>
+        <item name="android:activityOpenExitAnimation">@anim/none</item>
+        <item name="android:activityCloseEnterAnimation">@anim/none</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_to_bottom</item>
+    </style>
+
+    <style name="Theme.SlideAnimWindow" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/SlideAnimation</item>
+    </style>
+
+    <style name="custom_alert_dialog_animation_spinner">
+        <item name="android:windowEnterAnimation">@anim/bottom_animation_number_picker</item>
+        <item name="android:windowExitAnimation">@anim/custom_alert_dialog_slide_out_down_animation</item>
+    </style>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#BED554</color>
+    <color name="colorPrimaryDark">#BED554</color>
+    <color name="colorAccent">@android:color/darker_gray</color>
+    <color name="backgroundColor">#BED554</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="teal_300">#52C7AF</color>
+    <color name="colorGray1">#f4f4f4</color>
+    <color name="colorGray2">#DCD9D9</color>
+    <color name="colorBlue">#5B96C5</color>
+    <color name="colorGreen">#29B64A</color>
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
