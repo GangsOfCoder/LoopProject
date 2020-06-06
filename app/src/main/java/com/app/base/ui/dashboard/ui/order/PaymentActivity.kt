@@ -18,7 +18,7 @@ class PaymentActivity : BaseActivity() {
     }
 
     private fun attachClickListeners() {
-        ivToolbarBack.setOnClickListener {
+        ivToolbarBack.setOnClickListener {3
             onBackPressed()
         }
 

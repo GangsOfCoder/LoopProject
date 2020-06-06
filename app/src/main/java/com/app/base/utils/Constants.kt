@@ -3,7 +3,8 @@ package com.app.base.utils
 
 object Constants {
 
-    const val BASE_URL = "http://ec2-18-223-118-166.us-east-2.compute.amazonaws.com/loop/index.php/api/"
+    //const val BASE_URL = "http://ec2-18-223-118-166.us-east-2.compute.amazonaws.com/loop/index.php/api/"
+    const val BASE_URL = "http://ec2-3-18-70-105.us-east-2.compute.amazonaws.com/loop/index.php/api/"
     const val BASE_URL2 = "http://theloopshk.com:3000/api/"
 
     const val TOKEN = "token"

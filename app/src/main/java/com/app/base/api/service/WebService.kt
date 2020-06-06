@@ -15,12 +15,15 @@ interface WebService {
     @FormUrlEncoded
     @POST("register")
     fun doRegister(@FieldMap data: HashMap<String, String>): Call<RegisterResponse>
-
+    
     @Headers("Accept: " + "application/json")
     @FormUrlEncoded
     @POST("login")
     fun doLogin(@FieldMap data: HashMap<String, String>): Call<LoginResponse>
 
+    @FormUrlEncoded
+    @POST("create_ephemeral_key")
+    fun createEphemeralKey()
 
     @Headers("Accept: " + "application/json")
     @FormUrlEncoded
