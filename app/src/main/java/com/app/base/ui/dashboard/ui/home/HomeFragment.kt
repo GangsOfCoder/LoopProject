@@ -11,6 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.app.base.R
 import com.app.base.base.BaseFragment
 import com.app.base.ui.dashboard.ui.order.NewOrderActivity
+import com.app.base.ui.dashboard.ui.order.PaymentActivity
 import com.app.base.utils.saveValue
 import com.app.base.utils.security.ApiFailureTypes
 import com.google.gson.Gson
@@ -68,7 +69,8 @@ class HomeFragment : BaseFragment(), View.OnClickListener {
     override fun onClick(view: View?) {
         when (view?.id) {
             R.id.tvNewOrder, R.id.btnAdd -> {
-                startActivity(Intent(requireContext(), NewOrderActivity::class.java))
+                //startActivity(Intent(requireContext(), NewOrderActivity::class.java))
+                startActivity(Intent(requireContext(), PaymentActivity::class.java))
             }
         }
     }

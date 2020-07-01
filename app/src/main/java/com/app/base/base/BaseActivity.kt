@@ -17,6 +17,7 @@ import android.util.Log
 import android.view.View
 import android.view.Window
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -47,7 +48,7 @@ open class BaseActivity : AppCompatActivity() {
 
     fun getLoginInfo(): Data? {
         val gson = Gson()
-        return gson.fromJson(Preferences.prefs!!.getString("user_detail", null), Data::class.java)
+        return gson.fromJson(Preferences.prefs!!.getString("user_detail", ""), Data::class.java)
     }
 
     fun showSnackBar(message: String, content: View) {
@@ -58,6 +59,25 @@ open class BaseActivity : AppCompatActivity() {
 
     fun showToastMsg(msg: String) {
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
+    }
+
+    fun showDialog(title:String,msg:String) {
+        val builder = AlertDialog.Builder(this)
+        //set title for alert dialog
+        builder.setTitle(title)
+        //set message for alert dialog
+        builder.setMessage(msg)
+        builder.setIcon(android.R.drawable.ic_dialog_alert)
+
+        //performing positive action
+        builder.setPositiveButton("OK") { dialogInterface, which ->
+            dialogInterface.dismiss()
+        }
+        // Create the AlertDialog
+        val alertDialog: AlertDialog = builder.create()
+        // Set other dialog properties
+        alertDialog.setCancelable(false)
+        alertDialog.show()
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

@@ -13,8 +13,8 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //addFragment(LoginFragment(), false, R.id.container_main)
-        Log.d("tttttttttt", getLoginInfo().toString())
-        if (getLoginInfo() == null) {
+        Log.d("ttttt", getLoginInfo().toString())
+        if (getLoginInfo()==null) {
             addFragment(LoginFragment(), false, R.id.container_main)
         } else {
             val intent = Intent(this, DashboardActivity::class.java)

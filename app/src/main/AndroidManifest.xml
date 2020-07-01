@@ -15,7 +15,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ui.dashboard.ui.order.CheckoutActivity"></activity>
+        <activity android:name=".ui.dashboard.ui.order.CheckoutActivity"/>
         <activity android:name=".ui.dashboard.ui.order.PaymentActivity" />
         <activity android:name=".ui.dashboard.ui.home.SetReminderActivity" />
         <activity
